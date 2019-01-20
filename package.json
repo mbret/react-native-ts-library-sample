@@ -1,0 +1,48 @@
+{
+  "name": "react-native-ts-library-sample",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "./src/index.tsx",
+  "scripts": {
+    "test": "jest",
+    "rollup": "rollup -c rollup.config.js",
+    "rollup:watch": "rollup -c rollup.config.js -w",
+    "tsc": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@types/jest": "^23.3.13",
+    "@types/react": "^16.7.20",
+    "@types/react-native": "^0.57.29",
+    "@types/react-test-renderer": "^16.0.3",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react": "16.6.3",
+    "react-native": "0.57.8",
+    "react-test-renderer": "16.6.3",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "ts-jest": "^23.10.5",
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.4"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js|ts|tsx)$": "<rootDir>/test/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
+  }
+}
